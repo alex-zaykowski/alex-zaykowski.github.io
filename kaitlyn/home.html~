@@ -1,0 +1,56 @@
+<html>
+<title>Class Schedule</title>
+<style type="text/css">
+
+#banner{
+height: 100px;
+text-align: center;
+vertical-align: middle;
+color: pink;
+font-family: Times;
+font-size: 50px;
+font-weight: bold;
+padding-left: 90px;
+}
+
+#menu{
+font-weight: bold;
+color: darkturquoise;
+padding: 20px;
+}
+
+#menu:hover{
+color: lightskyblue;
+}
+
+</style>
+<body>
+<center><table>
+<tr>
+<td id="banner">Kaitlyn's Schedule</td>
+<td><img src="icon.gif" alt="" height="100px" width="100px"></td>
+</tr>
+</table></center>
+
+<center><table>
+<tr>
+<td><a id="menu" href="https://employee.geisinger.org/my.policy">Geisinger</a></td>
+<td><a id="menu" href="https://studentportal.luzerne.edu/welcome">Student Portal</a></td>
+<td><a id="menu" href="https://stmail.luzerne.edu/SOGo/">Email✉</a></td>
+</tr>
+</table></center>
+
+<center>
+<img src="Schedule.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="class" title="class" href="https://learn.luzerne.edu/webapps/blackboard/execute/announcement?method=search&amp;context=course_entry&amp;course_id=_14409_1&amp;handle=announcements_entry&amp;mode=view" coords="100,73,438,163" shape="rect">
+    <area target="" alt="lab" title="lab" href="#" coords="441,288,609,379" shape="rect">
+    <area target="" alt="clinical" title="clinical" href="#" coords="609,379,946,651" shape="rect">
+</map>
+</center>
+
+<img src="bunny.gif" align="bottom" width="100px" height="100px">
+
+</body>
+</html>
