@@ -37,6 +37,8 @@ color: lightskyblue;
 <td><a id="menu" href="https://employee.geisinger.org/my.policy">Geisinger</a></td>
 <td><a id="menu" href="https://studentportal.luzerne.edu/welcome">Student Portal</a></td>
 <td><a id="menu" href="https://stmail.luzerne.edu/SOGo/">Email✉</a></td>
+<td><a id="menu" href="https://www.atitesting.com">ATI</a></td>
+<td><a id="menu" href="https://bookshelf.vitalsource.com/#/books/9780803289619/cfi/6/26!/4/2/2/28/128/2@0:89.5">Sim Lab Book</a></td>
 </tr>
 </table></center>
 
@@ -44,7 +46,7 @@ color: lightskyblue;
 <img src="Schedule.png" usemap="#image-map">
 
 <map name="image-map">
-    <area target="" alt="class" title="class" href="https://learn.luzerne.edu/webapps/blackboard/execute/announcement?method=search&amp;context=course_entry&amp;course_id=_14409_1&amp;handle=announcements_entry&amp;mode=view" coords="100,73,438,163" shape="rect">
+    <area target="" alt="class" title="class" href="https://learn.luzerne.edu" coords="100,73,438,163" shape="rect">
     <area target="" alt="lab" title="lab" href="#" coords="441,288,609,379" shape="rect">
     <area target="" alt="clinical" title="clinical" href="#" coords="609,379,946,651" shape="rect">
 </map>
