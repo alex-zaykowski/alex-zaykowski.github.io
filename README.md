@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# My Personal Website
+Hi, it seems you are looking at the repository for my personal website! There really isn't much to discuss but if you're interested in how I built it there is some information below.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tools
+The following are the tools I used to build the page
+## VSCode
+- IDE to construct the website (super handy with the built in terminal)
 
-## Available Scripts
+## React
+- React was included to make development easier and to allow for a more modern approach to web development
+- If you're wondering how to include react in your own github pages website I'll include the instructions below
+1. create a github pages repository (there are tons of tutorials on this)
+2. clone that repository to whatever directory you use to contain your project folders
+3. cd into the directory where your cloned repository is 
+4. run "npm init react app [name of repository]
+5. run "npm start" to confirm react is working correctly
+6. kill the server with ^C
+7. run "npm install gh-pages --save"
+8. update the package.json
+    * above the "name" attribute add "hompage": "link to your github page"
+    * in scripts add "predeploy": "npm run build" and "deploy": "gh-pages -d build"
+9. run "npm start" again to make sure everything is still working
+    * if you get some warnings don't worry about it, as long as nothing is breaking the app you're good to go this is only github pages so don't freak out
+10. kill the server again
+11. run "npm run deploy" to clean up the build
+12. commit and push all of the changes
 
-In the project directory, you can run:
+- If you run into any issues it could be possible that you may need to change your source branch for the github page to the gh-pages branch. I also initially incorrectly installed gh-pages with "--save-dev" instead of "--save" which caused some issues, if you've done that and are getting your README.md instead of your App.js homepage, then reinstall gh-pages with --save. There is a lot of other information for trouble shooting online. Good luck!
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Javascript, HTML, CSS
+The rest of the website was built using the normal tools. I will continue to work on this until I am satisfied and may add some other tools as I go along. 
