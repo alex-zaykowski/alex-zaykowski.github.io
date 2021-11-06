@@ -39,8 +39,8 @@ ReactDOM.render(
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
     <Text
-      color={'#EC2D2D'}
-      fontSize={5}
+      color={'#FFF'}
+      fontSize={window.innerWidth / 200}
       maxWidth={200}
       lineHeight={1}
       letterSpacing={0.02}
