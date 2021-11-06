@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Suspense } from 'react'
 import { useRef, useState} from 'react'
-import reportWebVitals from './reportWebVitals';
-import { Canvas, useFrame } from '@react-three/fiber'
-import { useTexture, Text, PerspectiveCamera  } from '@react-three/drei'
+import { Canvas, useFrame} from '@react-three/fiber'
+import { useTexture, Text} from '@react-three/drei'
 
 function BoxLink(props) {
   const texture = useTexture(`${props.texture}`);
@@ -31,18 +30,17 @@ function BoxLink(props) {
     </mesh>
   )
 }
+
+
 ReactDOM.render(
   <div style={{ width: "100vw", height: "100vh" }}>
-  <Canvas>
+  <Canvas camera={{ fov: 75, position: [0, 0, 20] }}>
     <Suspense fallback={null}>
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
-    <PerspectiveCamera>
-      makeDefault
-    </PerspectiveCamera>
     <Text
       color={'#EC2D2D'}
-      fontSize={12}
+      fontSize={5}
       maxWidth={200}
       lineHeight={1}
       letterSpacing={0.02}
@@ -50,10 +48,12 @@ ReactDOM.render(
       font="https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwK4vaqI.woff"
       anchorX="center"
       anchorY="bottom"
-    >Alex
+    >
+      Alex Zaykowski
     </Text>
-    <BoxLink texture="gh-logo.png" link="https://github.com/alex-zaykowski" position={[-4, 0, 0]} />
-    <BoxLink texture="linkedin.png" link="https://www.linkedin.com/in/alex-zaykowski-04388a163/" position={[4, 0, 0]} />
+    <BoxLink texture="gh-logo.png" link="https://github.com/alex-zaykowski" position={[-4, -2, 0]} />
+    <BoxLink texture="instagram.png" link="https://www.instagram.com/alex.zaykowski/?hl=en" position={[0, -2, 0]} />
+    <BoxLink texture="linkedin.png" link="https://www.linkedin.com/in/alex-zaykowski-04388a163/" position={[4, -2, 0]} />
     </Suspense>
   </Canvas>,
   </div>,
