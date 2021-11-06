@@ -26,6 +26,15 @@ The following are the tools I used to build the page
 12. run "npm run deploy" to clean up the build
 13. commit and push all of the changes
 
+## [React Three Fiber](https://github.com/pmndrs/react-three-fiber)
+- This is a fantastic framework, I seriously cannot reccomend this enough if you're looking to use Three.js with React. It makes it significantly easier to implement Three.js objects in general.
+- [Documentation](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+
+## [Drei](https://github.com/pmndrs/drei)
+- Drei is a framework to supplemnt R3F, again this makes the process even simpler with adding textures and a camera as well as rendering.
+- [Documentation](https://docs.pmnd.rs/drei/introduction)
+
+
 ## Troubleshooting
 - I initially incorrectly installed gh-pages with "--save-dev" instead of "--save" which caused some issues, if you've done that and are getting your README.md instead of your App.js homepage, then reinstall gh-pages with --save. 
 - If you are still getting your README.md file instead of the homepage you created in your App.js file, then you should switch the source branch to gh-pages in the settings of your repo. It may take a few minutes for you to see the changes, so change the source and just wait a little to see if anything has changed. If it's been over 10 minutes there is likely something else wrong or you may need to hard refresh the page. React can be tricky to use if you're new to it, and deploying to github pages doesn't make it any easier. Good luck and remember there are plenty of other resources online if you're still having issues.
