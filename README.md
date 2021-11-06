@@ -25,7 +25,8 @@ The following are the tools I used to build the page
 11. run "npm run deploy" to clean up the build
 12. commit and push all of the changes
 
-- If you run into any issues it could be possible that you may need to change your source branch for the github page to the gh-pages branch. I also initially incorrectly installed gh-pages with "--save-dev" instead of "--save" which caused some issues, if you've done that and are getting your README.md instead of your App.js homepage, then reinstall gh-pages with --save. There is a lot of other information for trouble shooting online. Good luck!
-
+## Troubleshooting
+- I initially incorrectly installed gh-pages with "--save-dev" instead of "--save" which caused some issues, if you've done that and are getting your README.md instead of your App.js homepage, then reinstall gh-pages with --save. 
+- If you are still getting your README.md file instead of the homepage you created in your App.js file, then you should switch the source branch to gh-pages in the settings of your repo. It may take a few minutes for you to see the changes, so change the source and just wait a little to see if anything has changed. If it's been over 10 minutes there is likely something else wrong or you may need to hard refresh the page. React can be tricky to use if you're new to it, and deploying to github pages doesn't make it any easier. Good luck and remember there are plenty of other resources online if you're still having issues.
 ## Javascript, HTML, CSS
 The rest of the website was built using the normal tools. I will continue to work on this until I am satisfied and may add some other tools as I go along. 
