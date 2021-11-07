@@ -34,6 +34,9 @@ The following are the tools I used to build the page
 - Drei is a framework to supplemnt R3F, again this makes the process even simpler with adding textures and a camera as well as rendering.
 - [Documentation](https://docs.pmnd.rs/drei/introduction)
 
+## [React Spring] (https://github.com/pmndrs/react-spring)
+- Another incredible library used to craete the basic animations for the 3d icons
+- [Documentation](https://react-spring.io/)
 
 ## Troubleshooting
 - I initially incorrectly installed gh-pages with "--save-dev" instead of "--save" which caused some issues, if you've done that and are getting your README.md instead of your App.js homepage, then reinstall gh-pages with --save. 
