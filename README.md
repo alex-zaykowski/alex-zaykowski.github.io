@@ -23,7 +23,7 @@ The following are the tools I used to build the page
 10. run "npm start" again to make sure everything is still working
     * if you get some warnings don't worry about it, as long as nothing is breaking the app you're good to go this is only github pages so don't freak out
 11. kill the server again
-12. run "npm run deploy" to clean up the build
+12. run "npm run deploy" to clean up the build for deployment
 13. commit and push all of the changes
 
 ## [React Three Fiber](https://github.com/pmndrs/react-three-fiber)
