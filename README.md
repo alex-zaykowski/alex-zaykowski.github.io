@@ -34,7 +34,7 @@ The following are the tools I used to build the page
 - Drei is a framework to supplemnt R3F, again this makes the process even simpler with adding textures and a camera as well as rendering.
 - [Documentation](https://docs.pmnd.rs/drei/introduction)
 
-## [React Spring] (https://github.com/pmndrs/react-spring)
+## [React Spring](https://github.com/pmndrs/react-spring)
 - Another incredible library used to craete the basic animations for the 3d icons
 - [Documentation](https://react-spring.io/)
 
