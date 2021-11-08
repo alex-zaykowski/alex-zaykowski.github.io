@@ -35,7 +35,7 @@ The following are the tools I used to build the page
 - [Documentation](https://docs.pmnd.rs/drei/introduction)
 
 ## [React Spring](https://github.com/pmndrs/react-spring)
-- Another incredible library used to craete the basic animations for the 3d icons
+- Another incredible library used to create the basic animations for the 3d icons
 - [Documentation](https://react-spring.io/)
 
 ## Troubleshooting
