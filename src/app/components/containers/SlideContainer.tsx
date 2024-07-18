@@ -29,7 +29,7 @@ const songs: Music[] = [
     image: EnemyRemix,
   },
   {
-    title: "Sweet Trip - You Will Never Know Why",
+    title: "Sweet Trip - YWNKW",
     description:
       "Love Sweet Trip and their influences from shibuya kei, this whole album is great",
     url: "https://open.spotify.com/album/0kmPn6M3cue7rec6Unw6BD?si=T-nmasC7SlKnuXZeDYBkwg",
@@ -53,11 +53,11 @@ export const SlideContainer = () => {
   };
 
   return (
-    <div className="z-50 flex h-[300px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400 md:w-[600px]">
-      <div className="flex flex-col gap-10">
+    <div className="z-50 flex h-[250px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400 md:h-[300px] md:w-[600px]">
+      <div className="flex flex-col gap-3 md:gap-10">
         <h1 className="mt-5 text-2xl font-bold">Music</h1>
         <div className="flex flex-row gap-2">
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <Image
               src={songs[index].image}
               className="rounded"
@@ -65,20 +65,20 @@ export const SlideContainer = () => {
               height={200}
               alt="Album Cover"
             />
-          </div>
-          <div className="flex flex-col justify-between">
-            <div>
-              <h1 className="text-lg font-medium">{songs[index].title}</h1>
-              <p className="text-sm text-slate-600">
-                {songs[index].description}
-              </p>
-            </div>
             <IconButton
               onClick={() => openLink(songs[index].url)}
               icon={faSpotify}
               value="Spotify"
-              style="me-2 mr-2 inline-flex cursor-pointer w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-sm"
+              style="me-2 mr-2 mt-2 inline-flex cursor-pointer w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-sm"
             />
+          </div>
+          <div className="flex flex-col justify-between">
+            <div>
+              <h1 className="text-lg font-medium">{songs[index].title}</h1>
+              <p className="text-xs text-slate-600 md:text-sm">
+                {songs[index].description}
+              </p>
+            </div>
           </div>
         </div>
       </div>
