@@ -14,7 +14,7 @@ const openLink = (url: string) => {
 };
 export default function Home() {
   return (
-    <div className="z-50 flex min-h-screen flex-col items-center gap-10 bg-slate-50 p-10 md:flex-row md:items-baseline md:justify-between md:gap-0">
+    <div className="z-50 flex min-h-screen flex-col items-center gap-10 bg-slate-50 p-10 lg:flex-row lg:items-baseline lg:justify-between lg:gap-0">
       <div className="z-50 flex h-[300px] w-[350px] flex-col justify-between rounded bg-blue-600 p-3 text-white shadow-xl shadow-slate-400 md:w-[600px] md:p-5">
         <h1 className="text-2xl font-bold">Hi, I&apos;m Alex</h1>
         <p className="text-sm md:text-base">
