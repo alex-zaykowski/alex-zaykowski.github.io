@@ -53,17 +53,19 @@ export const SlideContainer = () => {
   };
 
   return (
-    <div className="z-50 flex h-[300px] w-[600px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400">
+    <div className="z-50 flex h-[300px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400 md:w-[600px]">
       <div className="flex flex-col gap-10">
         <h1 className="mt-5 text-2xl font-bold">Music</h1>
         <div className="flex flex-row gap-2">
-          <Image
-            src={songs[index].image}
-            className="rounded"
-            width={150}
-            height={150}
-            alt="Album Cover"
-          />
+          <div>
+            <Image
+              src={songs[index].image}
+              className="rounded"
+              width={200}
+              height={200}
+              alt="Album Cover"
+            />
+          </div>
           <div className="flex flex-col justify-between">
             <div>
               <h1 className="text-lg font-medium">{songs[index].title}</h1>
