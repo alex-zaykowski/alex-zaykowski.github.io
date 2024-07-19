@@ -57,12 +57,12 @@ export const SlideContainer = () => {
   const musicArrayLength = songs.length;
 
   return (
-    <div className="z-50 flex h-[250px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400 md:h-[300px] md:w-[600px]">
-      <div className="flex flex-col gap-3 md:gap-10">
-        <h1 className="mt-5 text-2xl font-bold">Music</h1>
-        <div className="flex flex-row gap-2">
+    <div className="z-50 flex h-[200px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-3 text-zinc-950 shadow-xl shadow-slate-400 md:h-[300px] md:w-[600px] lg:pl-5">
+      <div className="flex flex-col gap-3 md:gap-6">
+        <h1 className="mt-2 text-2xl font-bold lg:mt-5">Music</h1>
+        <div className="flex flex-row gap-2 lg:gap-2">
           <div className="flex flex-col items-center justify-center">
-            <div className="h-[150px] w-[150px]">
+            <div className="h-[100px] w-[100px] lg:h-[150px] lg:w-[150px]">
               <Image
                 src={songs[index].image}
                 className="rounded"
@@ -73,7 +73,7 @@ export const SlideContainer = () => {
               url={songs[index].url}
               icon={faSpotify}
               value="Spotify"
-              style="me-2 mr-2 mt-2 inline-flex cursor-pointer w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-sm"
+              style="me-2 mr-2 mt-2 inline-flex justify-center items-center cursor-pointer w-[80px] lg:w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-xs lg:text-sm"
             />
           </div>
           <div className="flex flex-col justify-between">
