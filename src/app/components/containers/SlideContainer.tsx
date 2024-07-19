@@ -62,7 +62,7 @@ export const SlideContainer = () => {
         <h1 className="mt-2 text-2xl font-bold lg:mt-5">Music</h1>
         <div className="flex flex-row gap-2 lg:gap-2">
           <div className="flex flex-col items-center justify-center">
-            <div className="h-[100px] w-[100px] lg:h-[150px] lg:w-[150px]">
+            <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px]">
               <Image
                 src={songs[index].image}
                 className="rounded"
@@ -73,12 +73,14 @@ export const SlideContainer = () => {
               url={songs[index].url}
               icon={faSpotify}
               value="Spotify"
-              style="me-2 mr-2 mt-2 inline-flex justify-center items-center cursor-pointer w-[80px] lg:w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-xs lg:text-sm"
+              style="me-2 mr-2 mt-2 inline-flex justify-center items-center cursor-pointer w-[80px] md:w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-xs md:text-sm"
             />
           </div>
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-lg font-medium">{songs[index].title}</h1>
+              <h1 className="text-base font-medium lg:text-lg">
+                {songs[index].title}
+              </h1>
               <p className="text-xs text-slate-600 md:text-sm">
                 {songs[index].description}
               </p>
@@ -87,7 +89,7 @@ export const SlideContainer = () => {
         </div>
       </div>
       <div
-        className="flex items-center justify-center rounded-r pl-2 pr-3 transition duration-100 ease-in-out hover:cursor-pointer active:bg-lime-300 lg:duration-200 lg:hover:bg-lime-300"
+        className="flex items-center justify-center rounded-r pl-2 pr-3 transition duration-100 ease-in-out hover:cursor-pointer active:bg-lime-300 md:hover:bg-lime-300 lg:duration-200"
         onClick={() => setIndex((index + 1) % musicArrayLength)}
       >
         <FontAwesomeIcon className="flex h-6 w-6" icon={faChevronRight} />
