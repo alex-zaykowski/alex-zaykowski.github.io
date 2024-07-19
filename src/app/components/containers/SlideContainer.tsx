@@ -48,10 +48,6 @@ export const SlideContainer = () => {
   const [index, setIndex] = useState<number>(0);
   const musicArrayLength = songs.length;
 
-  const openLink = (url: string) => {
-    window.open(url, "_blank");
-  };
-
   return (
     <div className="z-50 flex h-[250px] w-[350px] flex-row gap-10 rounded bg-slate-50 pl-5 text-zinc-950 shadow-xl shadow-slate-400 md:h-[300px] md:w-[600px]">
       <div className="flex flex-col gap-3 md:gap-10">
@@ -66,7 +62,7 @@ export const SlideContainer = () => {
               alt="Album Cover"
             />
             <IconButton
-              onClick={() => openLink(songs[index].url)}
+              url={songs[index].url}
               icon={faSpotify}
               value="Spotify"
               style="me-2 mr-2 mt-2 inline-flex cursor-pointer w-[100px] bg-lime-300 items-center gap-1 rounded border border-lime-300 px-4 py-1 text-center text-sm"
@@ -83,7 +79,7 @@ export const SlideContainer = () => {
         </div>
       </div>
       <div
-        className="duration-400 flex items-center justify-center pl-2 pr-3 transition ease-in-out hover:cursor-pointer hover:bg-lime-300"
+        className="flex items-center justify-center rounded-r pl-2 pr-3 transition duration-100 ease-in-out hover:cursor-pointer active:bg-lime-300 lg:duration-200 lg:hover:bg-lime-300"
         onClick={() => setIndex((index + 1) % musicArrayLength)}
       >
         <FontAwesomeIcon className="flex h-6 w-6" icon={faChevronRight} />
