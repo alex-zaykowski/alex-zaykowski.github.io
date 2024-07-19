@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import Ywnky from "../../images/ywnkw.png";
 import Blank from "../../images/blank.png";
+import InRainbows from "../../images/inrainbows.png";
 import { IconButton } from "../buttons/IconButton";
 import { useState } from "react";
 
@@ -22,11 +23,18 @@ interface Music {
 
 const songs: Music[] = [
   {
-    title: "The Hellp - yrsturly CFCF Remix",
+    title: "The Hellp - Enemy",
     description:
-      "I am a big fan of the SSX games for ps2, their songs remind me of those",
-    url: "https://open.spotify.com/track/4NIUIDCnoIutrRS2kGYOj5?si=180dca4fd8da43e5",
+      "My favorite band right now, this is their first album which rocks but all of them are awesome",
+    url: "https://open.spotify.com/album/0b4R5wYw27gkjd2Mt4C8AP?si=LbiHAbD9SlqAmlkDWVBSug",
     image: EnemyRemix,
+  },
+  {
+    title: "Radiohead - In Rainbows",
+    description:
+      "Probably my favorite album of all time, I listen to the whole thing once a month",
+    url: "https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK?si=XUVG1WPCQzeKTiV92qN8cA",
+    image: InRainbows,
   },
   {
     title: "Sweet Trip - YWNKW",
@@ -38,7 +46,7 @@ const songs: Music[] = [
   {
     title: "Blank - .........",
     description:
-      "This whole album is great, just a generally upbeat shoegaze/jpop album",
+      "This whole album is solid, just a generally upbeat shoegaze/jpop album",
     url: "https://open.spotify.com/album/2K5lKrTrHnXD4J5cO1IGAm?si=213flMrhRnCMaVgB_vcZoQ",
     image: Blank,
   },
@@ -54,13 +62,13 @@ export const SlideContainer = () => {
         <h1 className="mt-5 text-2xl font-bold">Music</h1>
         <div className="flex flex-row gap-2">
           <div className="flex flex-col items-center justify-center">
-            <Image
-              src={songs[index].image}
-              className="rounded"
-              width={200}
-              height={200}
-              alt="Album Cover"
-            />
+            <div className="h-[150px] w-[150px]">
+              <Image
+                src={songs[index].image}
+                className="rounded"
+                alt="Album Cover"
+              />
+            </div>
             <IconButton
               url={songs[index].url}
               icon={faSpotify}
